@@ -73,6 +73,7 @@
 ![](screenshots/7.png)
 ![](screenshots/8.png)
 ![](screenshots/10.png)
+#### Problems of Mental People Faced during Covid
 COVID has accelerated the adoption of digital healthcare Services. Access to digital information and communication technologies are resulting in increased demand for services in remote health care management. 
 In current scenario, mental health of COVID has accelerated the adoption of digital healthcare Services. Access to digital information and communication technologies are resulting in increased demand for services in remote health care management. 
 In current scenario, mental health of people has suffered the most, and the medical system has not been able to keep up with the growing demand of mental help. 
