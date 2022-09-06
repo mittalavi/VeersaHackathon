@@ -2,13 +2,13 @@ import  firebase from "firebase"
 import "firebase/firebase-database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCCUIaIb5k9T0lP1IfZOsRo-mGCn57_ToQ",
-  authDomain: "shrink4shrink.firebaseapp.com",
-  projectId: "shrink4shrink",
-  storageBucket: "shrink4shrink.appspot.com",
-  messagingSenderId: "299205315787",
-  appId: "1:299205315787:web:d9223453b7c56cc8e75f4e",
-  measurementId: "G-946JJW6SDB"
+	apiKey: "AIzaSyCT1lN1j3oPBs8A3YpgP4VCyXiY_z-hNew",
+	authDomain: "veersa-58cb7.firebaseapp.com",
+	projectId: "veersa-58cb7",
+	storageBucket: "veersa-58cb7.appspot.com",
+	messagingSenderId: "6870187412",
+	appId: "1:6870187412:web:58df542a1111ff3bdce381",
+	measurementId: "G-XLYEF2H1G4",
 };
 
 firebase.initializeApp(firebaseConfig);
