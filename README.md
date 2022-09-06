@@ -30,12 +30,12 @@
   
    An Awesome Healthcare Platform
     <br />
-    <a href=""><strong>Explore App »</strong></a>
+    <a href="https://veersahack.netlify.app/"><strong>Explore App »</strong></a>
     <br />
     <br />
-    <a href="https://veersahack.netlify.app/">View Demo</a>
+    <a href="">View Demo</a>
     ·
-    <a href="https://github.com/KaustubhMogha11/Amyra-Fashion-Store/issues">Report Bug</a>
+    <a href="https://github.com/KaustubhMogha11/veersahack_server/issues">Report Bug</a>
     ·
     <a href="https://github.com/mittalavi/VeersaHackathon/pulls">Request Feature</a>
   </p>
@@ -105,10 +105,8 @@ When a patient joins our platform a set of relevant questions will be asked to g
 
 
 ## What's next for shrink4shrink: 
-- Adding Support for MultiLingual Transcription & Notes Generation.
-- Expanding scope of platform to Other fields for Doctors & healthcare. 
-- A support for Chat system ,Grievance Service.
-- An android and IOS supported Applicatio
+-  Going to add IBM speech to text and summarizer API, platform will generate real time summary of session and present it to doctor ,which he/she will use to give advice to patient
+- An android and IOS supported Application
 
 
 <!-- ROADMAP -->
