@@ -243,7 +243,7 @@ const Dashboard = (props) => {
                 </Tilt>
               </div>
             </div>
-            {sessions && (
+            {/* {sessions && (
               <div className="row mb-3 py-2">
                 <div className="col-xl-6 col-sm-12">
                   <div className="ses-info p-2" style={{ width: "70vh" }}>
@@ -251,7 +251,7 @@ const Dashboard = (props) => {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
             <div className="row mb-3">
               <div className="col-xl-6 col-sm-12 py-2">
                 <div className="ses-info">
