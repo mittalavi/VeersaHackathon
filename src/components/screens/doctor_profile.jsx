@@ -13,7 +13,7 @@ class DoctorProfile extends React.Component {
     componentDidMount = () => {
         console.log(this.props.match.params.name);
         const email = this.props.match.params.name;
-        fetch("https://veersaserver.herokuapp.com/api/userdata", {
+        fetch("http://localhost:3001api/userdata", {
             method: "post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
@@ -33,7 +33,7 @@ class DoctorProfile extends React.Component {
     fun = (e) => {
         console.log(this.state.u.email);
         console.log(e.target.title);
-        fetch("https://veersaserver.herokuapp.com/api/assign_doctor", {
+        fetch("http://localhost:3001api/assign_doctor", {
             method: "post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
@@ -45,7 +45,7 @@ class DoctorProfile extends React.Component {
             .then((resp) => {
                 console.log(resp);
             });
-            fetch("https://veersaserver.herokuapp.com/api/userdata", {
+            fetch("http://localhost:3001api/userdata", {
                 method: "post",
                 headers: { "Content-type": "application/json" },
                 body: JSON.stringify({

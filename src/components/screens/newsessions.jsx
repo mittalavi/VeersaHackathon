@@ -30,7 +30,7 @@ class newsession extends React.Component {
     else
     {
       if(this.state.data.title.length>0 && this.state.data.date.length>0 &&this.state.data.time.length>0){
-        fetch("https://veersaserver.herokuapp.com/api/new_session",{
+        fetch("http://localhost:3001api/new_session",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({

@@ -16,7 +16,7 @@ class Prescriptions extends React.Component {
     localStorage.removeItem("user");
   }
   componentDidMount=()=>{
-    fetch("https://veersaserver.herokuapp.com/api/usersessions",{
+    fetch("http://localhost:3001api/usersessions",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({

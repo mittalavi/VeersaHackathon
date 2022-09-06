@@ -40,7 +40,7 @@ class Profile extends React.Component {
     };
   }
   onUpdate = () => {
-    fetch("https://veersaserver.herokuapp.com/api/userdata", {
+    fetch("http://localhost:3001api/userdata", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -67,7 +67,7 @@ class Profile extends React.Component {
   };
   onFirstnameUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -83,7 +83,7 @@ class Profile extends React.Component {
   };
   onLastnameUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -99,7 +99,7 @@ class Profile extends React.Component {
   };
   onPhoneUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -115,7 +115,7 @@ class Profile extends React.Component {
   };
   onDOBUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -131,7 +131,7 @@ class Profile extends React.Component {
   };
   onAddressUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -147,7 +147,7 @@ class Profile extends React.Component {
   };
   onCityUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -163,7 +163,7 @@ class Profile extends React.Component {
   };
   onStateUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -179,7 +179,7 @@ class Profile extends React.Component {
   };
   onPincodeUpdate = (e) => {
     console.log(e.target.value);
-    fetch("https://veersaserver.herokuapp.com/api/update_profile", {
+    fetch("http://localhost:3001api/update_profile", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -194,7 +194,7 @@ class Profile extends React.Component {
       });
   };
   componentDidMount = () => {
-    fetch("https://veersaserver.herokuapp.com/api/userdata", {
+    fetch("http://localhost:3001api/userdata", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -261,7 +261,7 @@ class Profile extends React.Component {
       await ref.put(this.state.file);
       const url = await ref.getDownloadURL();
       let data = await fetch(
-        "https://veersaserver.herokuapp.com/api/update_profile",
+        "http://localhost:3001api/update_profile",
         {
           method: "post",
           headers: { "Content-type": "application/json" },

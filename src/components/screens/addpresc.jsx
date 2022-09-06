@@ -53,7 +53,7 @@ class AddPresc extends React.Component {
         this.setState({
           data: res,
         });
-        fetch("https://veersaserver.herokuapp.com/api/add_presciption",{
+        fetch("http://localhost:3001api/add_presciption",{
       method:"post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({

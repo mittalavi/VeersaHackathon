@@ -14,7 +14,7 @@ class PatientProfile extends React.Component{
     }
     componentDidMount=()=>{
         const email = this.props.match.params.name;
-        fetch("https://veersaserver.herokuapp.com/api/userdata",{
+        fetch("http://localhost:3001api/userdata",{
            method:"post",
            headers: { "Content-type": "application/json" },
            body: JSON.stringify({
@@ -29,7 +29,7 @@ class PatientProfile extends React.Component{
            });
        });
 
-       fetch("https://veersaserver.herokuapp.com/api/usersessions",{
+       fetch("http://localhost:3001api/usersessions",{
         method:"post",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({
@@ -45,7 +45,7 @@ class PatientProfile extends React.Component{
             previous_session: resp
             });
         });
-        fetch("https://veersaserver.herokuapp.com/api/usersessions",{
+        fetch("http://localhost:3001api/usersessions",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
@@ -61,7 +61,7 @@ class PatientProfile extends React.Component{
                 upcoming_session: resp
                 });
             });
-        fetch("https://veersaserver.herokuapp.com/api/get_routine",{
+        fetch("http://localhost:3001api/get_routine",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({

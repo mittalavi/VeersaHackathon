@@ -15,7 +15,7 @@ class FindDoctor extends React.Component {
   }
   componentDidMount=()=>{
     console.log(this.state.u)
-    fetch("https://veersaserver.herokuapp.com/api/get_doctors",{
+    fetch("http://localhost:3001api/get_doctors",{
       method:"post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({

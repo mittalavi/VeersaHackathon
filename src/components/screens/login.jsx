@@ -31,7 +31,7 @@ class LoginPage extends React.Component {
   onSubmitSignIn = (event) => {
     console.log(this.state.data);
     event.preventDefault();
-    fetch("https://veersaserver.herokuapp.com/api/signin", {
+    fetch("http://localhost:3001api/signin", {
       method: "post",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
