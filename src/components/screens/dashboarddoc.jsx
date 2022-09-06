@@ -218,7 +218,6 @@ class dashboarddoc extends React.Component {
                         Patient: {this.state.latest && this.state.latest.user}
                       </p>
                     </div>
-                    {this.state.setjoin &&
                     <button
                       onClick={() =>
                         this.props.history.push(
@@ -229,7 +228,7 @@ class dashboarddoc extends React.Component {
                       class="btn btn-success"
                     >
                       Join now
-                    </button>}
+                    </button>
                   </div>
                 </div>
               </div>
