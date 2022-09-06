@@ -16,7 +16,7 @@ class PatientFeedback extends React.Component {
   handleClick = async () => {
     console.log(this.props.match.params.sessionId);
     let data = await fetch(
-      "http://localhost:3001/api/patient_feedback",
+      "https://veersaserver.herokuapp.com/api/patient_feedback",
       {
         method: "post",
         headers: {

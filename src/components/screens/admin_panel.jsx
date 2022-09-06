@@ -9,7 +9,7 @@ class AdminPanel extends React.Component{
       }
     }
     componentDidMount=()=>{
-      fetch("http://localhost:3001/api/adminpaneldata",{
+      fetch("https://veersaserver.herokuapp.com/api/adminpaneldata",{
            method:"get",
            headers: { "Content-type": "application/json" },
        })

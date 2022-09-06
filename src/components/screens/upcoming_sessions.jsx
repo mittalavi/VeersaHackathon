@@ -18,7 +18,7 @@ class UpcomingSessions extends React.Component {
   }
   componentDidMount=()=>{
     if(this.state.u.doctor){
-      fetch("http://localhost:3001/api/usersessions",{
+      fetch("https://veersaserver.herokuapp.com/api/usersessions",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
@@ -36,7 +36,7 @@ class UpcomingSessions extends React.Component {
     });
     }
         else{
-          fetch("http://localhost:3001/api/usersessions",{
+          fetch("https://veersaserver.herokuapp.com/api/usersessions",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
