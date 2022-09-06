@@ -84,11 +84,7 @@ class Details extends React.Component {
                     Routines
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link text-light" href="/prescriptions">
-                    Prescriptions
-                  </a>
-                </li>
+                
                 <li className="nav-item">
                   <a className="nav-link text-light" href="/newsession">
                     New Session
@@ -140,7 +136,7 @@ class Details extends React.Component {
                         <h6>Email ID: {this.state.data.user}</h6>
                       </div>
                       <div className="d-flex flex-row text-white">
-                        {this.state.u.doctor ? (
+                        {/* {this.state.u.doctor ? (
                           <div className="p-4 bg-primary text-center skill-block">
                             <button
                               onClick={() =>
@@ -154,17 +150,12 @@ class Details extends React.Component {
                               Add Prescription
                             </button>
                           </div>
-                        ) : (
+                        ) : ( */}
                           <div className="p-4 bg-primary text-center skill-block">
-                            <a
-                              className="text-dark"
-                              href={this.state.data.prescription}
-                            >
-                              Click Here
-                            </a>
+                         
                             <h6>Prescription</h6>
                           </div>
-                        )}
+                        {/* )} */}
                         <div className="p-3 bg-success text-center skill-block">
                           <h4>{this.state.data.doctor}</h4>
                           <h6>Doctor</h6>
@@ -281,7 +272,7 @@ class Details extends React.Component {
                           <h6>Email ID: {this.state.data.user}</h6>
                         </div>
                         <div className="d-flex flex-row text-white">
-                          {this.state.u.doctor ? (
+                          {/* {this.state.u.doctor ? (
                             <div className="p-4 bg-primary text-center skill-block">
                               <button
                                 onClick={() =>
@@ -295,17 +286,12 @@ class Details extends React.Component {
                                 Add Prescription
                               </button>
                             </div>
-                          ) : (
+                          ) : ( */}
                             <div className="p-4 bg-primary text-center skill-block">
-                              <a
-                                className="text-dark"
-                                href={this.state.data.prescription}
-                              >
-                                Click Here
-                              </a>
+                              
                               <h6>Prescription</h6>
                             </div>
-                          )}
+                          
                           <div className="p-3 bg-success text-center skill-block">
                             <h4>{this.state.data.doctor}</h4>
                             <h6>Doctor</h6>

@@ -225,11 +225,7 @@ class PreviousSessions extends React.Component {
                       Routines
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-light" href="/prescriptions">
-                      Prescriptions
-                    </a>
-                  </li>
+                  
                   <li className="nav-item">
                     <a className="nav-link text-light" href="/newsession">
                       New Session
