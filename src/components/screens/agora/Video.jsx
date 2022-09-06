@@ -24,7 +24,7 @@ const Video = ({
   const client = useClient();
   let endpoint = "https://shrink4shrink.herokuapp.com";
   // if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
-  //   endpoint = "http://localhost:3001";
+  //   endpoint = "http://localhost:3001/";
   // }
   const { ready, tracks } = useMicrophoneAndCameraTracks();
   console.log(token);
@@ -114,7 +114,7 @@ const Video = ({
   }, [inCall]);
   const generateReport = async () => {
     console.log(text);
-    let data = await fetch(`http://localhost:3001api/summary`, {
+    let data = await fetch(`http://localhost:3001/api/summary`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -141,7 +141,7 @@ const Video = ({
     }
     console.log(url);
     let response = await fetch(
-      "http://localhost:3001api/add_notes",
+      "http://localhost:3001/api/add_notes",
       {
         method: "post",
         headers: {

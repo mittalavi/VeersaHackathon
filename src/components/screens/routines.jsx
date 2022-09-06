@@ -64,7 +64,7 @@ class Routines extends React.Component {
         day = '0' + day;
       this.setState({date:[year, month, day].join('-')});
       console.log(this.state.date);
-      fetch("http://localhost:3001api/add_routine",{
+      fetch("http://localhost:3001/api/add_routine",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
@@ -84,7 +84,7 @@ class Routines extends React.Component {
     }
   };
   componentDidMount=()=>{
-    fetch("http://localhost:3001api/get_routine",{
+    fetch("http://localhost:3001/api/get_routine",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({

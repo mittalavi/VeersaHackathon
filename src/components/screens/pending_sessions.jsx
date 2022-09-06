@@ -17,7 +17,7 @@ class PendingSessions extends React.Component {
    
   componentDidMount=()=>{
     console.log(this.state.u.email);
-    fetch("http://localhost:3001api/usersessions",{
+    fetch("http://localhost:3001/api/usersessions",{
         method:"post",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({
@@ -40,7 +40,7 @@ class PendingSessions extends React.Component {
     console.log(sessionId);
     console.log(e.target.value);
     const user_email = e.target.value;
-    fetch("http://localhost:3001api/session_status",{
+    fetch("http://localhost:3001/api/session_status",{
           method:"post",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({
@@ -59,7 +59,7 @@ reject(e){
   const sessionId =  e.target.title;
   const user_email = e.target.value;
   console.log(sessionId);
-  fetch("http://localhost:3001api/session_status",{
+  fetch("http://localhost:3001/api/session_status",{
         method:"post",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({

@@ -56,7 +56,7 @@ In the session(video call) , using IBM speech to text and summarizer API, platfo
 
 ## Live Demo at:
 - http://localhost:3000  (Frontend)
-- http://localhost:3001 (Backend)
+- http://localhost:3001/ (Backend)
 
 ## Our Repositories:
 - https://github.com/mittalavi/VeersaHackathon

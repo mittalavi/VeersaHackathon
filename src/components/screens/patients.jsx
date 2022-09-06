@@ -12,7 +12,7 @@ class Patients extends React.Component {
     };
   }
   componentDidMount=()=>{
-    fetch("http://localhost:3001api/get_patient",{
+    fetch("http://localhost:3001/api/get_patient",{
             method:"post",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({

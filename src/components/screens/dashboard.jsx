@@ -18,7 +18,7 @@ const Dashboard = (props) => {
   useEffect(() => {
     const func = async () => {
       let data = await fetch(
-        "http://localhost:3001api/usersessions",
+        "http://localhost:3001/api/usersessions",
         {
           method: "post",
           headers: {
@@ -67,7 +67,7 @@ const Dashboard = (props) => {
     };
     const func1 = async () => {
       let data1 = await fetch(
-        "http://localhost:3001api/usersessions",
+        "http://localhost:3001/api/usersessions",
         {
           method: "post",
           headers: {
