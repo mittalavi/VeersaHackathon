@@ -459,7 +459,7 @@ class RegisterPage extends React.Component {
 													<a
 														type="button"
 														className="btn btn-light btn-lg b2-color"
-														href="http://localhost:3000login"
+														href="/login"
 													>
 														Already Registered.Continue to Login!
 													</a>
