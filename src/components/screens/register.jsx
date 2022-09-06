@@ -119,6 +119,7 @@ class RegisterPage extends React.Component {
                         alt="img"
                         className="img-fluid"
                         style={{
+                          height:"100%",
                           borderTopLeftRadius: ".25rem",
                           borderBottomLeftRadius: ".25rem",
                         }}
