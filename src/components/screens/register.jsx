@@ -459,7 +459,7 @@ class RegisterPage extends React.Component {
 													<a
 														type="button"
 														className="btn btn-light btn-lg b2-color"
-														href="https://veersahack.netlify.app/login"
+														href="http://localhost:3000login"
 													>
 														Already Registered.Continue to Login!
 													</a>
