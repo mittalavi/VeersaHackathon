@@ -60,7 +60,7 @@ class RegisterPage extends React.Component {
           this.state.data.email
         )
       ) {
-        fetch("http://localhost:3001/api/signup", {
+        fetch("https://veersaserver.herokuapp.com/api/signup", {
           method: "post",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({

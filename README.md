@@ -56,7 +56,7 @@ In the session(video call) , using IBM speech to text and summarizer API, platfo
 
 ## Live Demo at:
 - https://veersahack.netlify.app/  (Frontend)
-- http://localhost:3001/ (Backend)
+- https://veersaserver.herokuapp.com/ (Backend)
 
 ## Our Repositories:
 - https://github.com/mittalavi/VeersaHackathon

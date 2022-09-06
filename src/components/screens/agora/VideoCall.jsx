@@ -14,7 +14,7 @@ const VideoCall = (props) => {
   useEffect(() => {
     const init = async () => {
       let data = await fetch(
-        `http://localhost:3001/api/agora-call/token?channel=${sessionId}`
+        `https://veersaserver.herokuapp.com/api/agora-call/token?channel=${sessionId}`
       );
       data = await data.json();
       console.log(data);

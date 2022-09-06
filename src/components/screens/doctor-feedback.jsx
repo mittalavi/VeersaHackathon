@@ -17,7 +17,7 @@ class DoctorFeedback extends React.Component {
     this.setState({ ...this.state, [e.target.name]: e.target.value });
   handleClick = async () => {
     let data = await fetch(
-      "http://localhost:3001/api/doctor_feedback",
+      "https://veersaserver.herokuapp.com/api/doctor_feedback",
       {
         method: "post",
         headers: {

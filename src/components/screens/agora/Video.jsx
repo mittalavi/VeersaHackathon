@@ -114,7 +114,7 @@ const Video = ({
   }, [inCall]);
   const generateReport = async () => {
     console.log(text);
-    let data = await fetch(`http://localhost:3001/api/summary`, {
+    let data = await fetch(`https://veersaserver.herokuapp.com/api/summary`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -141,7 +141,7 @@ const Video = ({
     }
     console.log(url);
     let response = await fetch(
-      "http://localhost:3001/api/add_notes",
+      "https://veersaserver.herokuapp.com/api/add_notes",
       {
         method: "post",
         headers: {
