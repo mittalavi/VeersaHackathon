@@ -24,6 +24,8 @@ class Profile extends React.Component {
         doctor_assigned: "",
         picture: "",
         email: "",
+        userspouse:"",
+        
       },
       u: JSON.parse(localStorage.getItem("user")),
       abled_firstname: "disabled",

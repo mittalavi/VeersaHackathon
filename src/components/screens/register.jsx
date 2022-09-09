@@ -18,6 +18,7 @@ class RegisterPage extends React.Component {
         password: "",
         cnfrmpassword: "",
         doctor: "false",
+        userspouse:""
       },
     };
   }
@@ -43,6 +44,7 @@ class RegisterPage extends React.Component {
         email: "",
         password: "",
         cnfrmpassword: "",
+        userspouse:""
       },
     });
   };
@@ -76,6 +78,7 @@ class RegisterPage extends React.Component {
             gender: this.state.data.gender,
             pincode: this.state.data.pincode,
             password: this.state.data.password,
+            userspouse:this.state.data.userspouse,
             picture:
               "https://firebasestorage.googleapis.com/v0/b/shrink4shrink.appspot.com/o/img.png?alt=media&token=9ea01296-80dd-44ad-a3e8-1442110f179b",
           }),
@@ -436,6 +439,23 @@ class RegisterPage extends React.Component {
 														htmlFor="form3Example97"
 													>
 														Confirm Password*
+													</label>
+												</div>
+												<div className="form-outline mb-4">
+													<input
+														type="text"
+														id="form3Example97"
+														className="form-control form-control-lg"
+														name="userspouse"
+														value={data.userspouse}
+														onChange={this.onChange}
+														// required
+													/>
+													<label
+														className="form-label"
+														htmlFor="form3Example97"
+													>
+														user spouse
 													</label>
 												</div>
 
